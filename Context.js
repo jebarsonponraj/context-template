@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 
 const PostContext = createContext();
-function Context() {
+function Context({children}) {
     const [posts, setPosts] = useState([]);
 
     function handleAddPosts(post) {
